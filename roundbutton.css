@@ -5,8 +5,14 @@
   width: 150px;
   border-radius: 12px;
   border: 2px solid #FFEFD5;
+
 }
 
-h4 {
-   font-family: "Courier New", Courier, monospace;
+.nice{
+   font-family:"Courier New",
+   /* font-family: "Courier New", Courier, monospace; */
+}
+
+.nice2.0{
+  font-family:"Courier New",
 }

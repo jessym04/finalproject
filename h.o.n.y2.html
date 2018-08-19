@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #F08080;
+  }
+  li {
+      float: left;
+  }
+  li a {
+      display: block;
+      color: #FAFAD2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  li a:hover {
+      background-color: #FF7F50;
+  }
+  
+.container {
+  position: relative;
+  max-width: 1000px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+* {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none ; max-width: 1000px;}
+    img {vertical-align: middle;}
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+    
+</style>
+</head>
+<body>
+<body background=breath.jpg>
+    <center>
+    <img src = "logo.jpg" width = "100" height = "100">
+  </center>
+  <div>
+    <ul>
+        <center>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="h.o.n.y2.html">H.O.N.Y</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href= "wholesomemems.html">Wholesome Memes</a></li>
+      <li> <a href="hotlines.html"> Contact Hotline </a> </li>
+      </center>
+    </ul>
+
+  </div>
+
+<center>
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="firstpic.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">“I danced with him for ten years before I knew his name.”</div>
+    <div class="text"></div>
+  </div>
+</div>
+
+  
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="pic2.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">"A few years ago I get a call from my wife, and she tells me that her aunt is going through a tough time and needs a place to stay.  So I agreed to let the aunt stay with us for a few months.  ‘I’m doing a good deed,’ I thought.  But things got weird after she moved in.  She was a really quiet lady.  And she always seemed to be watching me.  I’d be walking around downstairs, and I’d notice the aunt peering down on me from the upper level.  Like I was some sort of intruder.  But I think to myself: ‘Just ignore it.  She’s going through a rough time.’  Then one night I wake up at 2:30 AM and the aunt is standing over my bed, saying some sort of prayer over me.  And I sleep completely naked.  And I have no idea how long this woman has been there.  And I wake up my wife, who starts dragging the aunt out of the room, and the whole time the woman is screaming at me: ‘I know who you are!  You aren’t fooling anyone!’  It was terrifying.  My wife and I separated four months later.  Things hadn’t been going great, but that aunt definitely flushed the toilet.”</div>
+    <div class="text"></div>
+  </div>
+</div>
+
+
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="pic3.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">"I’m a single father raising a teenager. We’re meeting here in a few minutes to go on a run. I’m trying to teach him discipline and focus. He’s had some problems paying attention in school, but I don’t want to put him on medication. His mother and I divorced when he was four. She’s a good person. She’s very appreciative of what I’ve done. She just wasn’t ready to be a parent. I was in a much better place. So she didn’t fight me on custody. But it scares me to think if she had. The courts are set up against men. They almost always determine that women should raise kids and men should pay child support. I don’t understand it. There’s a big push to see women as equal workers. Why can’t men be equal parents?”</div>
+    <div class="text"></div>
+  </div>
+</div>
+
+
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="pic4.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">“My superpower is fire. It’s inside my hands but I only use it on bullies. My dad is a superhero too. His power is minding his own business.”</div>
+    <div class="text"></div>
+  </div>
+</div>
+
+
+</center>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  
+
+</body>
+</html>
+

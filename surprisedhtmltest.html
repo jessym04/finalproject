@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <body background=breath.jpg>
     <style>
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #F08080;
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: #FAFAD2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #FF7F50;
+    }
+
     * {box-sizing: border-box}
     body {font-family: Verdana, sans-serif; margin:0}
     .mySlides {display: none}
@@ -92,43 +114,67 @@
     </style>
   </head>
   <body>
-    <script type="text/javascript" src="http://scmplayer.co/script.js"
-data-config="{'skin':'http://static.tumblr.com/d41lcii/CPRmqwldp/skinflor.css','volume':50,'autoplay':false,'shuffle':true,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'Ciara - Level Up','url':'https://www.youtube.com/watch?v=Dh-ULbQmmF8'},{'title':'Pharrell Williams - Happy','url':'https://www.youtube.com/watch?v=y6Sxv-sUYtM&list=RDQMhH0aPyrY-R0&start_radio=1'},{'title':'Kero Kero Bonito - Flamingo','url':'https://www.youtube.com/watch?v=rY-FJvRqK0E'}]}" >
- </script>
+
+
+<script type="text/javascript" src="http://scmplayer.co/script.js"
+data-config="{'skin':'http://static.tumblr.com/d41lcii/CPRmqwldp/skinflor.css','volume':50,'autoplay':false,'shuffle':true,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'Ciara - Level Up','url':'https://www.youtube.com/watch?v=Dh-ULbQmmF8'},{'title':'Pharrell Williams - Happy','url':'https://www.youtube.com/watch?v=y6Sxv-sUYtM&list=RDQMhH0aPyrY-R0&start_radio=1'},{'title':'Kero Kero Bonito - Flamingo','url':'https://www.youtube.com/watch?v=rY-FJvRqK0E'}]}" ></script>
+
+
   <center>
   <img src= "logo.jpg" width = "100" height ="100" onclick="location.href = 'homepage.html';">
+
+  <div>
+   <ul>
+   <center>
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="h.o.n.y.html">H.O.N.Y</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href= "wholesomemems.html">All the Memes</a></li>
+    <li><a href="hotlines.html"> Contact Hotline </a></li>
+   </center>
+   </ul>
+  </div>
+
   <div class="slideshow-container">
+
   <div class="mySlides fade">
     <div class="numbertext"></div>
     <img src="windows.jpg" style="width:50%">
     <div class="text"></div>
   </div>
+
   <div class="mySlides fade">
     <div class="numbertext"></div>
     <img src="fast_walker.png" style="width:50%">
     <div class="text"></div>
   </div>
+
   <div class="mySlides fade">
     <div class="numbertext"></div>
     <img src="challenge.png" style="width:50%">
     <div class="text"></div>
   </div>
+
   <div class="mySlides fade">
     <div class="numbertext"></div>
     <img src="duckling.png" style="width:50%">
     <div class="text"></div>
   </div>
+
   </center>
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
   </div>
   <br>
+
   <div style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
     <span class="dot" onclick="currentSlide(4)"></span>
   </div>
+
   <script>
   var slideIndex = 1;
   showSlides(slideIndex);

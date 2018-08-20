@@ -7,6 +7,32 @@ if(!empty($sessData['status']['msg'])){
     unset($_SESSION['sessData']['status']);
 }
 ?>
+
+<style>
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family : "Courier New", Courier, monospace ;
+}
+
+</style>
+
+<body style="background-color:powderblue;">
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <div style="background-color:pink;height:150px; text-align:center;">
+    <br>
+    <div style="margin-left:15px">
+          <h1> Welcome!
+          </h1>
+        </select></div>
+</div>
+<br>
+
+<center>
 <div class="container">
     <?php
         if(!empty($sessData['userLoggedIn']) && !empty($sessData['userID'])){
@@ -24,23 +50,28 @@ if(!empty($sessData['status']['msg'])){
         <p><b>Name: </b><?php echo $userData['first_name'].' '.$userData['last_name']; ?></p>
         <p><b>Email: </b><?php echo $userData['email']; ?></p>
         <p><b>Phone: </b><?php echo $userData['phone']; ?></p>
+    <button class="button button3" onclick="location.href = 'index.html';">Continue</button></p>
     </div>
     <?php }else{ ?>
-    <h2>Login to Your Account</h2>
+    <h2>Login</h2>
     <?php echo !empty($statusMsg)?'<p class="'.$statusMsgType.'">'.$statusMsg.'</p>':''; ?>
     <div class="regisFrm">
         <form action="userAccount.php" method="post">
             <input type="email" name="email" placeholder="EMAIL" required="">
+            <br>
             <input type="password" name="password" placeholder="PASSWORD" required="">
-            <div class="send-button">
+            <br>
+            <div button class="button button2" class="send-button"></button>
                 <input type="submit" name="loginSubmit" value="LOGIN">
             </div>
         </form>
-        <p>Don't have an account? <a href="registration.php">Register</a></p>
+        <p>Don't have an account? <button class="button button3" onclick="location.href = 'registration.php';">Register</button></p>
     </div>
+
+  </center>
     <?php } ?>
 </div>
- <!--
+
 <head>
   <style>
 .button {
@@ -95,8 +126,6 @@ if(!empty($sessData['status']['msg'])){
 </head>
 <br>
 <body>
-<button class="button button1" onclick="location.href = 'user.php';">User</button>
-<button class="button button2" onclick="location.href = 'index.php';">Index</button>
-<button class="button button3" onclick="location.href = 'registration.php';">Registration</button>
+
+
 </body>
--->

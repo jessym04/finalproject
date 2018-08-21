@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
 <style>
 ul {
       list-style-type: none;
@@ -151,6 +152,32 @@ ul {
       .prev, .next,.text {font-size: 11px}
     }
 
+    body {margin:0;}
+
+    .icon-bar {
+        width: 100%;
+        background-color: #555;
+        overflow: auto;
+    }
+
+    .icon-bar a {
+        float: left;
+        width: 16.6% ;
+        text-align: center;
+        padding: 12px 0;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 36x
+    }
+
+    .icon-bar a:hover {
+        background-color: #C6E0FF;
+    }
+
+    .active {
+        background-color: #F5D3C8;
+    }
+    
 </style>
 </head>
 <body background=breath.jpg>
@@ -159,16 +186,14 @@ ul {
   </center>
       <br>
   <div>
-    <ul>
-        <center>
-      <li><a href="homepage.html">Home</a></li>
-      <li><a href="h.o.n.y2.html">H.O.N.Y</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href= "wholesomemems.html">All the Memes</a></li>
-      <li> <a href="index.html"> See Emojis </a> </li>
-      <li> <a href="hotlines.html"> Contact Hotline </a> </li>
-      </center>
-    </ul>
+    <div class="icon-bar">
+      <a class="active" href="homepage.html"><i class="fa fa-home"></i></a>
+      <a class="active" href="h.o.n.y.html">HONY</i></a>
+      <a class="active" href="about.html">About</i></a>
+      <a class="active" href= "wholesomemems.html">Memes</i></a>
+      <a class="active" href="index.html">Welcome</i></a>
+      <a class="active" href="hotlines.html">Hotline</i></a>
+    </div>
 <br>
   </div>
 <div>

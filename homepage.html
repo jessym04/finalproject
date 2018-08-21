@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <meta name "viewpoint" content = "width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head><style>
 ul {
     list-style-type: none;
@@ -28,6 +29,33 @@ li a {
 li a:hover {
     background-color: #FF7F50;
 }
+
+body {margin:0;}
+
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 16.66%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36x
+}
+
+.icon-bar a:hover {
+    background-color: #C6E0FF;
+}
+
+.active {
+    background-color: #F5D3C8;
+}
+
 </style>
 </head>
 <body background="breath.jpg">
@@ -37,21 +65,19 @@ li a:hover {
 <div>
 
 
-  <ul>
-      <center>
-    <li><a href="homepage.html">Home</a></li>
-    <li><a href="h.o.n.y.html">H.O.N.Y</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href= "wholesomemems.html">All the Memes</a></li>
-    <li> <a href="index.html"> See Emojis </a> </li>
-    <li> <a href="hotlines.html"> Contact Hotline </a> </li>
-    </center>
-  </ul>
+  <div class="icon-bar">
+    <a class="active" href="#"><i class="fa fa-home"></i></a>
+    <a class="active" href="#">HONY</i></a>
+    <a class="active" href="#">About</i></a>
+    <a class="active" href="#">Memes</i></a>
+    <a class="active" href="#">Welcome</i></a>
+    <a class="active" href="#">Hotline</i></a>
+  </div>
 
 </div>
 <div>
   <center>
-  <h3 class="nice2.0">Welcome To Vibes!</h3>    
+  <h3 class="nice2.0">Welcome To Vibes!</h3>
 <p class ="nice"> Our goal here at Vibes is to spread positivity, and help you manage stress in high-stress environments. We hope you enjoy this website and continue to use it as a resource in the future!</p>
 </center>
 </body>

@@ -273,7 +273,7 @@ c.parentNode.insertBefore(cp, c); })(); </script>
     </div>
     <div class="modal-body">
 
-        <img src=getaff(sad) alt="aff" width="500" height="250">
+        <img src = "keepswimming.png" width="500" height="250">
     </div>
     <div class="modal-footer">
 

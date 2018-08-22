@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<style>
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #F08080;
+  }
+  li {
+      float: left;
+  }
+  li a {
+      display: block;
+      color: #FAFAD2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  li a:hover {
+      background-color: #FF7F50;
+  }
+
+.container {
+  position: relative;
+  max-width: 1000px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+* {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none ; max-width: 1000px;}
+    img {vertical-align: middle;}
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
+    body {margin:0;}
+
+    .icon-bar {
+        width: 100%;
+        background-color: #555;
+        overflow: auto;
+    }
+
+    .icon-bar a {
+        float: left;
+        width: 16.6% ;
+        text-align: center;
+        padding: 12px 0;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 36x
+    }
+
+    .icon-bar a:hover {
+        background-color: #C6E0FF;
+    }
+
+    .active {
+        background-color: #F5D3C8;
+    }
+
+</style>
+</head>
+<body background=breath.jpg>
+    <center>
+    <img src = "logo.jpg" width = "100" height = "100" onclick="location.href = 'homepage.html';">
+  </center>
+      <br>
+  <div>
+    <div class="icon-bar">
+      <a class="active" href="homepage.html"><i class="fa fa-home"></i></a>
+      <a class="active" href="h.o.n.y.html">HONY</i></a>
+      <a class="active" href="about.html">About</i></a>
+      <a class="active" href= "wholesomemems.html">Memes</i></a>
+      <a class="active" href="index.html">Welcome</i></a>
+      <a class="active" href="hotlines.html">Hotline</i></a>
+    </div>
+<br>
+  </div>
+<div>
+<center>
+
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="pic4.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">“My superpower is fire. It’s inside my hands but I only use it on bullies. My dad is a superhero too. His power is minding his own business.”</div>
+    <div class="text"></div>
+  </div>
+</div>
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="pic5.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">“I’ve lived here my whole life. I’m ready to leave. I just graduated college and I’d love to experience a new city. But I’m stuck. My dad is trying to become a citizen, and I need to stay in the city because I’m the one petitioning on his behalf. We’ve been waiting for five years already. We’ve spent so much money. But it’s the least I can do for him. I’ve seen where he lived in Mexico: tiny houses, dirt floors, no shoes. He was the youngest of twelve. His family couldn’t afford to educate him. So he came here when he was seventeen and worked as a migrant worker in California. He slept in train cars and ate food out of the trash. Even now he works fourteen hours a day. He comes home, we talk a bit, and he goes to sleep. It’s been that way my entire life. He’s turning fifty soon and he’d love to start his own business. So I hope he gets his citizenship. It’s a little dangerous because he’s on the radar now. They have his fingerprints. But he’s got a son that fought in Afghanistan. And now he’s got a daughter that graduated from NYU, so I think he deserves to stay.”
+    </div>
+    <div class="text"></div>
+  </div>
+</div>
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="pic6.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">“I’m much younger than I thought I would be. When I was in college, I thought 43 seemed so old. It just seemed everything would be set by then and my life would be over. I thought I’d only be doing things that I had to do. Everything is a choice when you’re young. But then you graduate from school and make your big decisions: your career, your marriage, your kids. And it seems that with each big decision, you have less opportunity for choice. But I still have a lot of choices. It’s just not all about me anymore. I enjoy choosing ways for my kids to experience new things. I’m thinking about bringing them to the Ben and Jerry’s factory in Vermont next weekend. I think they’ll get a kick out of it. I can still remember my daughter’s face the first time she saw Yankee Stadium. I’d already been dozens of times, but it almost felt like the first time for me too. And I love taking my son to his soccer games. He’s only six so he has no clue how to play. But he’s decided that his job is to run back and forth in front of the goal. He basically invented defense and I got to watch it happen. These things are a lot of fun for me. When I was young, I imagined they’d feel like obligations. But they’re not. They’re choices.”
+    </div>
+    <div class="text"></div>
+  </div>
+</div>
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="pic8.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">"Recently I went home to Dublin for six months to spend time with my father. He’s in the late stages of Alzheimer’s. While I was there, I noticed that the bank where I worked was moving along fine without me. It made me realize that my contribution was dispensable. So when the sabbatical ended, I just couldn’t go back. My friend happened to approach me around that time with an opportunity to start a company. We’re developing an app to help manage the construction process. It feels good to be learning so much again. Everything was so specialized at the bank. There was an expert for everything. Everyone just stuck to the things they were good at and recognized for. But there’s no bureaucracy in our start-up. It’s just the two of us. There’s only what needs to be done. I can last about a year before things get financially stressful. I’m hoping that the company will be viable by then. Because even if it doesn't make a lot of money, as long as it survives, I’ll have been a part of creating something.”
+    </div>
+    <div class="text"></div>
+  </div>
+</div>
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="pic7.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">“It’s so hard to ask for help. Because you’re supposed to be ‘Mommy.’ And you never want to say: ‘I need help being Mommy.’ I carried this person for nine months. I knew she was coming. I felt like I should be able to handle it and I didn’t want to ask other people to stop their lives. Especially if they had no part in making this baby. But eventually I had to give in. I’m just one person and being ‘Mama’ 24/7 can make you crazy. I found myself getting frustrated that other people were going on with their lives. I’d let things fester. And it was unhealthy for my relationships. I’d get heated with my mother and boyfriend. Instead of beginning with ‘Can you help?’ I’d lose my temper, and jump straight to: ‘Why aren’t you helping?’”
+    </div>
+    <div class="text"></div>
+  </div>
+</div>
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="pic9.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">“I wasn’t planning on dressing up as a clown. I’d been drinking all night in Poughkeepsie and I somehow ended up at the train station, so I decided to take the 4 AM train into the city. I had $200 in my pocket from some gutter cleaning work. I immediately spent the first $60 on brunch and Bloody Marys. Then I walked by Party City and I had the idea to get a clown wig. But then I noticed the suspenders, and the top, and the bow tie, and some balloons. I bought a red nose too but I’m not sure what happened to it. I left the store with about $100, which was enough to get some shoes and a half pint of Seagram’s. I ended the day with $10, but that got lost when I passed out in Times Square. Now I'm trying to figure out how to get home. I need to stop drinking.”
+
+</div>
+    <div class="text"></div>
+  </div>
+</div>
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="pic10.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">“I’ve known her since I was seven. I had a crush on her even back then. But she lived back in the Dominican Republic, so I’d only get to see her during the summer. We just got tired of being apart. So I asked her to marry me. My parents were against it. I was twenty-one. I was going to City College. I was still living at home and they thought I wasn’t ready. And there was definitely some truth to that. I had to drop out of school once she moved in with us. I couldn’t handle everything. At first I was depressed but I started to progress quickly at work. I got raise after raise. We moved out of my parents’ house and got a small apartment in the Bronx. Now I’m studying to get my electrical license. I've seen a lot of the guys I work with start their own companies. You’ve just got to want it. You’ve got to want to move up, and you can find a way. The marriage has been great and it’s been tough. We have a two-year-old daughter now. It’s a lot of work. But it’s also awesome to go home everyday and find two people who love me.”
+
+</div>
+    <div class="text"></div>
+  </div>
+</div>
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="pic11.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">“I’m trying to finish writing a book. I’m on my fourth draft and have 70,000 words so far. It’s an adventure tale set in Jamaica. My main character is a twelve-year old girl named Kristi. She’s the same age that I was when I left the island. I really want to write something that resonates back home. I’ve been researching the history and folklore of the country. I’m trying to get the dialect just right. I want Jamaicans to recognize themselves and be proud. I've been working on it for four years now. I’ve given up on so many other things. I gave up on being a doctor. I’ve given up writing other stories. I lost sixty pounds last year, but before that I’d given up on so many diets. So I’m determined to finish this. I try not to think about other goals for the book. Because the more I need from it, the more I freeze up. I have a lot of debt. I have a lot of relatives in Jamaica that need money. But if I start writing to feel hopeful about my financial situation, the words won’t come. So my goal is just to finish my fourth draft. And if that happens, my next goal is to get a rejection letter that tells me something I can improve.”
+    </div>
+    <div class="text"></div>
+  </div>
+</div>
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="pic12.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">“We’re going to a new school for kindergarten. They make you wear green clothes and there are fishy games with fish that eat numbers. We’re going to be in different classes. We’re not sure what that’s going to be like. But we’re only a little scared, because we can see each other at lunch and recess.”
+    </div>
+    <div class="text"></div>
+  </div>
+</div>
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="firstpic.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">“I danced with him for ten years before I knew his name.”</div>
+    <div class="text"></div>
+  </div>
+</div>
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="pic2.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">"A few years ago I get a call from my wife, and she tells me that her aunt is going through a tough time and needs a place to stay.  So I agreed to let the aunt stay with us for a few months.  ‘I’m doing a good deed,’ I thought.  But things got weird after she moved in.  She was a really quiet lady.  And she always seemed to be watching me.  I’d be walking around downstairs, and I’d notice the aunt peering down on me from the upper level.  Like I was some sort of intruder.  But I think to myself: ‘Just ignore it.  She’s going through a rough time.’  Then one night I wake up at 2:30 AM and the aunt is standing over my bed, saying some sort of prayer over me.  And I sleep completely naked.  And I have no idea how long this woman has been there.  And I wake up my wife, who starts dragging the aunt out of the room, and the whole time the woman is screaming at me: ‘I know who you are!  You aren’t fooling anyone!’  It was terrifying.  My wife and I separated four months later.  Things hadn’t been going great, but that aunt definitely flushed the toilet.”</div>
+    <div class="text"></div>
+  </div>
+</div>
+
+
+<div class="container slideshow-container mySlides fade">
+<div class="numbertext"></div>
+  <img src="pic3.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="overlay">
+    <div class="text">"I’m a single father raising a teenager. We’re meeting here in a few minutes to go on a run. I’m trying to teach him discipline and focus. He’s had some problems paying attention in school, but I don’t want to put him on medication. His mother and I divorced when he was four. She’s a good person. She’s very appreciative of what I’ve done. She just wasn’t ready to be a parent. I was in a much better place. So she didn’t fight me on custody. But it scares me to think if she had. The courts are set up against men. They almost always determine that women should raise kids and men should pay child support. I don’t understand it. There’s a big push to see women as equal workers. Why can’t men be equal parents?”</div>
+    <div class="text"></div>
+  </div>
+</div>
+
+
+
+</center>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+    <span class="dot" onclick="currentSlide(12)"></span>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+
+</body>
+</html>

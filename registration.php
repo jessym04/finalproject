@@ -15,14 +15,19 @@ h1 {
     font-family : "Courier New", Courier, monospace ;
 }
 
+body{
+    background-image: url('https://i.imgur.com/Gg2LbDh.jpg');
+    background-size: cover;
+}
+
 </style>
 
-<body style="background-color:powderblue;">
+<body>
   <br>
   <br>
   <br>
   <br>
-  <div style="background-color:pink;height:150px; text-align:center;">
+  <div style="height:150px; text-align:center;">
     <br>
     <div style="margin-left:15px">
           <h1> Register

@@ -15,15 +15,28 @@ h1 {
     font-family : "Courier New", Courier, monospace ;
 }
 
+p.sserif {
+  font-family: "Courier New", monospace;
+    width: 600px;
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 0;
+}
+
+body{
+    background-image: url('https://gifer.com/i/CRg.gif');
+    background-size: cover;
+}
 </style>
 
-<body style="background-color:powderblue;">
+<body>
+
 
   <br>
   <br>
   <br>
   <br>
-  <div style="background-color:pink;height:150px; text-align:center;">
+  <div style="height:150px; text-align:center;">
     <br>
     <div style="margin-left:15px">
           <h1> Welcome!
@@ -34,6 +47,10 @@ h1 {
 
 <center>
 <div class="container">
+
+
+
+
     <?php
         if(!empty($sessData['userLoggedIn']) && !empty($sessData['userID'])){
             include 'user.php';
@@ -44,6 +61,10 @@ h1 {
             $conditions['return_type'] = 'single';
             $userData = $user->getRows($conditions);
     ?>
+
+
+
+
     <h2>Welcome <?php echo $userData['first_name']; ?>!</h2>
     <a href="userAccount.php?logoutSubmit=1" class="logout">Logout</a>
     <div class="regisFrm">
@@ -67,6 +88,9 @@ h1 {
         </form>
         <p>Don't have an account? <button class="button button3" onclick="location.href = 'registration.php';">Register</button></p>
     </div>
+
+
+
 
   </center>
     <?php } ?>
@@ -122,6 +146,10 @@ h1 {
   color: white;
 }
 
+#selector {
+    width:100%;
+    height:100%;
+}
 </style>
 </head>
 <br>
